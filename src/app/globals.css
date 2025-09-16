@@ -14,8 +14,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff;
+    --foreground: #171717;
   }
 }
 
@@ -23,4 +23,80 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@theme {
+  --font-montserrat: "Montserrat", ui-sans-serif, system-ui, sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+    --color-primary-900: #3892c6;
+    --color-primary-700: #54a5d5;
+    --color-primary-500: #7fbadc;
+    --color-primary-300: #b6d5eb;
+    --color-primary-100: #d7e9f5;
+    --color-secondary-900: #1b465f;
+
+    --color-dark-900: #282221;
+    --color-gold-200: #FAF7F2;
+
+    /*  Shadcn Colors */
+
+  --color-bg-muted: 240 4.8% 95.9%;
+  --color-text-muted-foreground: 240 3.8% 46.1%;
+
+}
+
+
+
+html,
+body {
+  @apply bg-white font-montserrat font-normal text-sm;
+  background: var(--background);
+  box-sizing: border-box;
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background: #ffffff;
+      --foreground: #1B1B1B;
+    }
+  }
+}
+
+@layer components{
+  h1 {
+    @apply font-extrabold text-[40px]
+  }
+
+  h2 {
+    @apply font-bold text-2xl
+  }
+
+  h3 {
+    @apply font-semibold text-xl
+  }
+
+  h4 {
+    @apply font-bold text-xl
+  }
+
+  h5 {
+    @apply font-bold text-[16px]
+  }
+
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .hero-h {
+    @apply h-[calc(100svh-91px)]
+  }
 }
