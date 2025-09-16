@@ -1,7 +1,6 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
 
-import { IconClose } from "@/icons/icon-close";
+import { IconClose } from "@/components/icons/icon-close";
 import Image from "next/image";
 import Link from "next/link";
 import NavItem from "../ui/navItem";

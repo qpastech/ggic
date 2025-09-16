@@ -3,6 +3,8 @@ import BtnLink from "../ui/BtnLink";
 import Image from "next/image";
 import { navItems } from "@/data";
 import NavItem from "../ui/navItem";
+import IconFacebook from "../icons/icon-facebook";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -24,6 +26,39 @@ const Footer = () => {
         <BtnLink className="lg:ml-7" href="/join-us">
           Join Us
         </BtnLink>
+
+        <div className="flex justify-center lg:justify-start items-center gap-4 mx-auto lg:mx-0 mt-10 lg:ml-7">
+          <Link
+            href="https://www.facebook.com/GGICGraceland/?locale=en_GB"
+            target="_blanc"
+          >
+            <IconFacebook className="size-10" />
+          </Link>
+          <Link
+            href="https://www.instagram.com/explore/locations/340250429449495/grace-to-grace-international-church-ggic-graceland/"
+            target="_blanc"
+          >
+            <Image
+              width={30}
+              height={30}
+              className=""
+              alt="instagram"
+              src="/socials/instagram_logo_icon.png"
+            />
+          </Link>
+          <Link
+            href="https://www.tiktok.com/@ggic.graceland?is_from_webapp=1&sender_device=pc"
+            target="_blanc"
+          >
+            <Image
+              width={40}
+              height={40}
+              className=""
+              alt="instagram"
+              src="/socials/tiktok_icon.png"
+            />
+          </Link>
+        </div>
       </div>
 
       <div className="lg:mt-11 w-full lg:w-100 lg:text-left text-center">
@@ -33,7 +68,7 @@ const Footer = () => {
         <p className="text-lg">RM10 8PS</p>
       </div>
 
-      <div className="lg:mt-8 w-full lg:w-100 lg:text-left text-center">
+      <div className="lg:mt-8 w-full lg:w-fit lg:text-left text-center">
         <nav className="flex flex-col gap-1 mt-4">
           {navItems.map((lin, index) => (
             <div key={index}>

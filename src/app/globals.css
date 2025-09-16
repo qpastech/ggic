@@ -32,15 +32,6 @@ body {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
-    --color-primary-900: #3892c6;
-    --color-primary-700: #54a5d5;
-    --color-primary-500: #7fbadc;
-    --color-primary-300: #b6d5eb;
-    --color-primary-100: #d7e9f5;
-    --color-secondary-900: #1b465f;
-
-    --color-dark-900: #282221;
-    --color-gold-200: #FAF7F2;
 
     /*  Shadcn Colors */
 

@@ -6,7 +6,7 @@ import Image from "next/image";
 import BtnLink from "../ui/BtnLink";
 import Modal from "../common/modal";
 import MobileNavigation from "./MobileNavigation";
-import { IconMenu } from "@/icons/icon-menu";
+import { IconMenu } from "@/components/icons/icon-menu";
 import { navItems } from "@/data";
 
 const Header = () => {
