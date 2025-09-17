@@ -19,7 +19,7 @@ const NavItem = ({
   href,
   exact = false,
   className = "",
-  defaultClasses = "px-2 curser-pointer border-b-4 hover:text-purple-900 hover:border-purple-900",
+  defaultClasses = "px-2 curser-pointer border-b-4 hover:text-purple-900 hover:border-purple-900 text-lg",
   activeClasses = "border-purple-900",
   inActiveClasses = "border-transparent",
   children,
