@@ -18,6 +18,9 @@ export const metadata: Metadata = {
   title: "Grace to Grace International Church",
   description:
     "Equipping, Transforming & Experiencing Greater Results. Come expectant. Be transformed.",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({

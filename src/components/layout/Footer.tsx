@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="flex lg:flex-row flex-col justify-center gap-20 bg-purple-200 px-10 lg:px-25 py-25">
+    <div className="flex lg:flex-row flex-col justify-center gap-20 bg-purple-200 mt-50 px-10 lg:px-25 py-25">
       <div className="w-full lg:w-100 lg:text-left text-center">
         <Image
           height={100}

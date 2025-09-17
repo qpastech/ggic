@@ -1,6 +1,29 @@
+import FlexContent, { FlexContentProps } from "@/components/common/FlexContent";
+import UpcomingEvents from "@/components/modules/UpcomingEvents";
 import BackgroundVideo from "@/components/ui/BackgroundVideo";
 import BtnLink from "@/components/ui/BtnLink";
+import { upcoming_events } from "@/data/events";
 import React from "react";
+
+const welcomeSection: FlexContentProps = {
+  imgPosition: "right",
+  image: "/pictures/worship.jpg",
+  title: "Welcome",
+  content:
+    "Church is not the same without you. Whether you’re exploring faith, new to the area, or looking for a church home — you belong here.",
+  ctaHref: "http://localhost:4000/plan-your-visit",
+  ctaTitle: "Join Us",
+};
+
+const serviceTimeSection: FlexContentProps = {
+  imgPosition: "left",
+  image: "/pictures/pastor.jpg",
+  title: "Service Times & Location",
+  content:
+    "Join us every Sunday at 9am · Redif, Graceland, Wantz Rd, Dagenham RM10 8PS. Parking and children’s check-in are available when you visit",
+  ctaHref: "http://localhost:4000/plan-your-visit",
+  ctaTitle: "Plan Your Visit",
+};
 
 const Page = () => {
   return (
@@ -37,6 +60,31 @@ const Page = () => {
           </div>
         </BackgroundVideo>
       </div>
+      <section className="mx-5 mt-75">
+        <FlexContent {...welcomeSection} imgClassName="w-200 object-cover" />
+      </section>
+      <section className="mx-5 mt-75">
+        <FlexContent
+          {...serviceTimeSection}
+          imgClassName="w-200 object-cover object-top lg:h-200"
+        />
+      </section>
+      <section className="mt-75">
+        <h2 className="text- text-center">Upcoming Events</h2>
+        <p className="mx-auto mt-8 max-w-150 text-lg text-center">
+          There’s always something happening at Grace to Grace — come be a part
+          of what God is doing.
+        </p>
+        <div className="flex flex-wrap justify-center gap-40 lg:gap-10 mt-20">
+          {upcoming_events.map((event) => {
+            return (
+              <div key={event.id}>
+                <UpcomingEvents {...event} />
+              </div>
+            );
+          })}
+        </div>
+      </section>
     </main>
   );
 };

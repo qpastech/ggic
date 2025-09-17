@@ -58,23 +58,24 @@ body {
 
 @layer components{
   h1 {
-    @apply font-extrabold text-[40px]
+    @apply text-purple-800 font-extrabold lg:text-[76px] text-4xl
   }
 
   h2 {
-    @apply font-bold text-2xl
+    @apply text-purple-800 font-bold text-5xl lg:text-7xl
   }
 
+
   h3 {
-    @apply font-semibold text-xl
+    @apply font-bold text-purple-800 text-3xl
   }
 
   h4 {
-    @apply font-bold text-xl
+    @apply text-purple-800  font-bold text-2xl
   }
 
   h5 {
-    @apply font-bold text-[16px]
+    @apply text-purple-800  font-bold text-[16px]
   }
 
 }

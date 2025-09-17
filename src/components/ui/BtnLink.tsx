@@ -9,6 +9,7 @@ type Props = {
 const BtnLink = ({ href, children, className }: Props) => {
   return (
     <Link
+      target="_blank"
       className={`inline-block bg-purple-500 px-5 py-3 rounded-xl font-bold text-white cursor-pointer text ${className}`}
       href={href}
     >
