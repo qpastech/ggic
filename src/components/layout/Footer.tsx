@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="flex lg:flex-row flex-col justify-center gap-20 bg-purple-200 mt-50 px-10 lg:px-25 py-25">
+    <div className="flex lg:flex-row flex-col justify-center gap-20 bg-primary-200 mt-50 px-10 lg:px-25 py-25">
       <div className="w-full lg:w-100 lg:text-left text-center">
         <Image
           height={100}
@@ -17,7 +17,7 @@ const Footer = () => {
           alt="grace to grace international church"
           className="mx-auto lg:mx-0 w-40 lg:w-45 h-auto"
         />
-        <h3 className="mb-3 lg:ml-7 font-bold text-purple-800 text-3xl">
+        <h3 className="mb-3 lg:ml-7 font-bold text-primary-800 text-3xl">
           New Here?
         </h3>
         <p className="bg-green mb-3 lg:ml-7 text-lg">
@@ -62,7 +62,7 @@ const Footer = () => {
       </div>
 
       <div className="lg:mt-11 w-full lg:w-100 lg:text-left text-center">
-        <h3 className="mb-15 font-bold text-purple-800 text-3xl">Address</h3>
+        <h3 className="mb-15 font-bold text-primary-800 text-3xl">Address</h3>
         <p className="mb-5 text-lg">Grace to Grace International Church</p>
         <p className="mb-5 text-lg">Redif, Graceland, Wantz Rd, Dagenham</p>
         <p className="text-lg">RM10 8PS</p>

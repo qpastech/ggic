@@ -7,6 +7,7 @@ interface BackgroundVideoProps {
   overlayColor?: string;
   children?: React.ReactNode;
   childrenClassName?: string;
+  className?: string;
 }
 
 const BackgroundVideo: React.FC<BackgroundVideoProps> = ({
@@ -15,9 +16,10 @@ const BackgroundVideo: React.FC<BackgroundVideoProps> = ({
   overlayColor = "rgba(0,0,0,0.4)",
   children,
   childrenClassName,
+  className,
 }) => {
   return (
-    <div className="relative w-full h-full overflow-hidden">
+    <div className={`relative w-full h-full overflow-hidden ${className}`}>
       <VideoPlayer
         className="top-0 left-0 absolute w-full h-full object-cover"
         src={src}

@@ -13,7 +13,7 @@ interface Props {
 const MobileNavigation = ({ closeHandler }: Props) => {
   return (
     <div>
-      <div className="p-5 text-purple-900">
+      <div className="p-5 text-primary-900">
         <div className="flex justify-between items-center">
           <Link href="/home">
             <Image
@@ -25,7 +25,7 @@ const MobileNavigation = ({ closeHandler }: Props) => {
             />
           </Link>
           <IconClose
-            className="size-8 text-purple-900"
+            className="size-8 text-primary-900"
             onClick={closeHandler}
           />
         </div>

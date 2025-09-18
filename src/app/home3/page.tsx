@@ -63,7 +63,7 @@ const Page = () => {
       <section className="mx-5 mt-75">
         <FlexContent {...welcomeSection} imgClassName="w-200 object-cover" />
       </section>
-      <section className="bg-purple-100 mx-5 mt-50 py-25">
+      <section className="bg-primary-100 mx-5 mt-50 py-25">
         <FlexContent
           {...serviceTimeSection}
           imgClassName="w-200 object-cover object-top lg:h-200"

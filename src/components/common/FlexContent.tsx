@@ -22,7 +22,7 @@ const FlexContent = ({
 }: FlexContentProps) => {
   return (
     <div
-      className={`flex  justify-center items-center gap-25 flex-wrap ${
+      className={`flex justify-between items-center flex-wrap lg:max-w-320 mx-auto  ${
         imgPosition === "left"
           ? "flex-col lg:flex-row"
           : "flex-col lg:flex-row-reverse"
@@ -37,8 +37,8 @@ const FlexContent = ({
       />
 
       <div>
-        <h2 className="w-full lg:w-150">{title}</h2>
-        <p className="mt-10 w-100 text-lg">{content}</p>
+        <h2 className="w-full lg:max-w-150">{title}</h2>
+        <p className="mt-10 max-w-150 text-lg">{content}</p>
         <BtnLink href={ctaHref} className="mt-10 w-full lg:w-fit text-center">
           {ctaTitle}
         </BtnLink>

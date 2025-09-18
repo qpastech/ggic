@@ -33,6 +33,17 @@ body {
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
 
+
+     --color-primary-900: #6B4296;
+  --color-primary-800: #7C55A2;
+  --color-primary-700: #8E68AD;
+  --color-primary-600: #9F7BB9;
+  --color-primary-500: #B18EC4;
+  --color-primary-400: #C3A2D0;
+  --color-primary-300: #D5B5DB;
+  --color-primary-200: #E7C9E7;
+  --color-primary-100: #F1DCF0;
+  --color-primary-50:  #FAEFF9;
     /*  Shadcn Colors */
 
   --color-bg-muted: 240 4.8% 95.9%;
@@ -44,7 +55,7 @@ body {
 
 html,
 body {
-  @apply bg-white font-montserrat font-normal text-sm;
+  @apply bg-white font-montserrat font-normal text-lg;
   background: var(--background);
   box-sizing: border-box;
 
@@ -58,24 +69,24 @@ body {
 
 @layer components{
   h1 {
-    @apply text-purple-800 font-extrabold lg:text-[76px] text-4xl
+    @apply text-primary-900 font-extrabold lg:text-[76px] text-4xl
   }
 
   h2 {
-    @apply text-purple-800 font-bold text-5xl lg:text-7xl
+    @apply text-primary-900 font-bold text-5xl lg:text-5xl
   }
 
 
   h3 {
-    @apply font-bold text-purple-800 text-3xl
+    @apply font-bold text-primary-900 text-3xl
   }
 
   h4 {
-    @apply text-purple-800  font-bold text-2xl
+    @apply text-primary-900  font-bold text-2xl
   }
 
   h5 {
-    @apply text-purple-800  font-bold text-[16px]
+    @apply text-primary-900  font-bold text-[16px]
   }
 
 }

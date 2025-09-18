@@ -60,7 +60,7 @@ const Page = () => {
           </div>
         </BackgroundVideo>
       </div>
-      <section className="bg-purple-100 mx-5 mt-50 py-25">
+      <section className="bg-primary-100 mx-5 mt-50 py-25">
         <FlexContent {...welcomeSection} imgClassName="w-200 object-cover" />
       </section>
       <section className="mx-5 mt-75">
@@ -69,7 +69,7 @@ const Page = () => {
           imgClassName="w-200 object-cover object-top lg:h-200"
         />
       </section>
-      <section className="bg-purple-100 mt-50 py-25">
+      <section className="bg-primary-100 mt-50 py-25">
         <h2 className="text- text-center">Upcoming Events</h2>
         <p className="mx-auto mt-8 max-w-150 text-lg text-center">
           There’s always something happening at Grace to Grace — come be a part
