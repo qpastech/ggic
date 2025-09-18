@@ -23,7 +23,11 @@ const Header = () => {
       <nav className="hidden lg:flex justify-center gap-2 bg-primary-200 py-3">
         {navItems.map((lin, index) => (
           <div key={index}>
-            <NavItem className="" href={lin.href} matcher={lin.matcher}>
+            <NavItem
+              className="text-[16px]"
+              href={lin.href}
+              matcher={lin.matcher}
+            >
               {lin.name}
             </NavItem>
           </div>
